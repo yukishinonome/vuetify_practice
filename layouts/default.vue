@@ -37,9 +37,7 @@ export default {
   },
 
   data: () => ({
-    clipped: false,
     drawer: false,
-    fixed: false,
     items: [
       {
         icon: 'mdi-apps',
@@ -52,9 +50,6 @@ export default {
         to: '/inspire'
       }
     ],
-    miniVariant: false,
-    right: true,
-    rightDrawer: false,
     title: 'Vuetify.js'
   }),
 
