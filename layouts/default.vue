@@ -15,7 +15,9 @@
 
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title v-text="title" />
+      <v-btn text nuxt to="/">
+        <v-toolbar-title v-text="title" />
+      </v-btn>
     </v-app-bar>
 
     <v-content>
@@ -58,3 +60,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.v-btn {
+  text-transform: none;
+
+  &::before {
+    background-color: transparent;
+  }
+}
+</style>
