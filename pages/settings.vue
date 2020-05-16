@@ -1,17 +1,49 @@
 <template>
-  <v-layout>
-    <v-flex>
-      <v-card class="mx-auto" max-width="344" outlined>
-        <v-list-item three-line>
-          <v-list-item-content>
-            <!-- <div class="overline mb-4">OVERLINE</div> -->
-            <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
-            <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-list flat subheader>
+    <v-subheader>設定</v-subheader>
+
+    <v-list-item-group>
+      <v-list-item>
+        <v-list-item-action>
+          <v-switch v-model="$vuetify.theme.dark" primary></v-switch>
+        </v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>ダークモード</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item>
+        <v-list-item-action>
+          <v-switch v-model="value"></v-switch>
+        </v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>＊＊＊</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item>
+        <v-list-item-action>
+          <v-switch v-model="value"></v-switch>
+        </v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>＊＊＊</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item>
+        <v-list-item-action>
+          <v-switch v-model="value"></v-switch>
+        </v-list-item-action>
+
+        <v-list-item-content>
+          <v-list-item-title>＊＊＊</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list-item-group>
+  </v-list>
 </template>
 
 <script>
