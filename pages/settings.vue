@@ -1,5 +1,5 @@
 <template>
-  <v-card flat>
+  <v-card outlined>
     <v-card-title primary-title class="no_padding_bottom">
       設定
     </v-card-title>
