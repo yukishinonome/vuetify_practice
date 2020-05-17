@@ -1,51 +1,66 @@
 <template>
-  <v-list flat subheader>
-    <v-subheader>設定</v-subheader>
-
-    <v-list-item-group>
-      <v-list-item>
-        <v-list-item-action>
-          <v-switch v-model="$vuetify.theme.dark" primary></v-switch>
-        </v-list-item-action>
-
-        <v-list-item-content>
-          <v-list-item-title>ダークモード</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item>
-        <v-list-item-action>
-          <v-switch v-model="value"></v-switch>
-        </v-list-item-action>
-
-        <v-list-item-content>
-          <v-list-item-title>＊＊＊</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item>
-        <v-list-item-action>
-          <v-switch v-model="value"></v-switch>
-        </v-list-item-action>
-
-        <v-list-item-content>
-          <v-list-item-title>＊＊＊</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item>
-        <v-list-item-action>
-          <v-switch v-model="value"></v-switch>
-        </v-list-item-action>
-
-        <v-list-item-content>
-          <v-list-item-title>＊＊＊</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-list-item-group>
-  </v-list>
+  <v-card flat>
+    <v-card-title primary-title class="no_padding_bottom">
+      設定
+    </v-card-title>
+    <v-card-text>
+      <v-container fluid class="no_padding_top">
+        <v-row>
+          <v-col cols="12" sm="4" md="4">
+            <v-switch
+              label="ダークモード"
+              v-model="$vuetify.theme.dark"
+              hide-details
+            ></v-switch>
+            <v-switch label="＊＊＊＊＊" v-model="hoge" hide-details></v-switch>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-switch
+              v-model="ex11"
+              label="indigo"
+              color="indigo"
+              value="indigo"
+              hide-details
+            ></v-switch>
+            <v-switch
+              v-model="ex11"
+              label="red"
+              color="red"
+              value="red"
+              hide-details
+            ></v-switch>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-switch
+              v-model="ex11"
+              label="orange"
+              color="orange"
+              value="orange"
+              hide-details
+            ></v-switch>
+            <v-switch
+              v-model="ex11"
+              label="green"
+              color="green"
+              value="green"
+              hide-details
+            ></v-switch>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style lang="scss">
+.no_padding_top {
+  padding-top: 0;
+}
+.no_padding_bottom {
+  padding-bottom: 0;
+}
+</style>
