@@ -32,9 +32,9 @@
       </v-container>
     </v-content>
 
-    <v-footer app>
+    <!-- <v-footer app>
       <span>&copy; 2020</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
