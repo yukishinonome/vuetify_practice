@@ -19,7 +19,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left flat dark>
+    <v-app-bar app clipped-left flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-btn text nuxt to="/">
         <v-toolbar-title v-text="title" />
@@ -75,5 +75,8 @@ export default {
   &::before {
     background-color: transparent;
   }
+}
+.theme--light.v-app-bar.v-toolbar.v-sheet {
+  background-color: #bbdefb;
 }
 </style>
