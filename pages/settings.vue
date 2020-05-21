@@ -51,11 +51,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    $vuetify: Object
-  }
-}
+export default {}
 </script>
 
 <style lang="scss">
