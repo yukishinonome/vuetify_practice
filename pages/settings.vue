@@ -1,8 +1,6 @@
 <template>
   <v-card outlined>
-    <v-card-title primary-title class="no_padding_bottom">
-      設定
-    </v-card-title>
+    <v-card-title primary-title class="no_padding_bottom">設定</v-card-title>
     <v-card-text>
       <v-container fluid class="no_padding_top">
         <v-row>
@@ -53,7 +51,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    $vuetify: Object
+  }
+}
 </script>
 
 <style lang="scss">
