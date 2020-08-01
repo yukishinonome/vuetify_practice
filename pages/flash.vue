@@ -12,7 +12,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   data: () => ({
     show: false,
     type: '',
@@ -35,5 +37,5 @@ export default {
       this.show = false
     }
   }
-}
+})
 </script>
