@@ -57,6 +57,11 @@ export default {
         to: '/flash'
       },
       {
+        icon: 'mdi-chart-line',
+        title: 'グラフ',
+        to: '/sparklines'
+      },
+      {
         icon: 'mdi-cog',
         title: '設定',
         to: '/settings'
