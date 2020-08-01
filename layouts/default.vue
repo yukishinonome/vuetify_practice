@@ -2,13 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app clipped>
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -34,7 +28,7 @@
 
     <!-- <v-footer app>
       <span>&copy; 2020</span>
-    </v-footer> -->
+    </v-footer>-->
   </v-app>
 </template>
 
@@ -57,6 +51,11 @@ export default {
       //   title: 'Inspire',
       //   to: '/inspire'
       // },
+      {
+        icon: 'mdi-alert-rhombus',
+        title: 'アラート',
+        to: '/alert'
+      },
       {
         icon: 'mdi-cog',
         title: '設定',
