@@ -53,8 +53,8 @@ export default {
       // },
       {
         icon: 'mdi-alert-rhombus',
-        title: 'アラート',
-        to: '/alert'
+        title: 'フラッシュ',
+        to: '/flash'
       },
       {
         icon: 'mdi-cog',
